@@ -7,4 +7,4 @@
 		// else equal
 
 // $userguess = fgets(STDIN) - reads what user types
-	// $userguess === random number variable
+	// $userguess === random number variable 
