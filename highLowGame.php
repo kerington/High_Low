@@ -1,8 +1,20 @@
 <?php
 
-// random number
+$min = 0;
+$max = 100;
 
-// if random umber greater
+// random number
+int rand ( int $min , int $max )
+
+if ($userguess > $randomNumber) {
+    echo "Loooooowerrr...";
+} elseif ($userguess < $randomNumber) {
+	echo "Hiiiiiigherrr...";
+} else {
+	echo "YOU GOT IT!";
+}
+
+// if random number greater
 	// elseif lower
 		// else equal
 
