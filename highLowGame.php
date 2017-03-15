@@ -11,18 +11,20 @@ $randomNumber = rand ($min , $max);
 do {
 	fwrite(STDOUT, 'Number guess? ');
 	$userGuess = fgets(STDIN);
-		if ($userguess < $randomNumber) {
+		if ($userGuess < $randomNumber) {
 			echo "Hiiiiiigherrr...";
-		} elseif ($userguess > $randomNumber) {
+		} elseif ($userGuess > $randomNumber) {
 		    echo "Loooooowerrr...";
 		} else {
 			echo "YOU GOT IT!";
 		}
-} while ($userguess != $randomNumber);
+	} while ($userGuess != $randomNumber);
+
+
 // LOOP END
 // if random number greater
 	// elseif lower
 		// else equal
 
-// $userguess = fgets(STDIN) - reads what user types
-	// $userguess === random number variable 
+// $userGuess = fgets(STDIN) - reads what user types
+	// $userGuess === random number variable 
