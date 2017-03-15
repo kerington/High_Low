@@ -4,7 +4,12 @@ $min = 0;
 $max = 100;
 
 // random number
-int rand ( int $min , int $max )
+// $randomNumber = int rand ( int $min , int $max )
+
+fwrite(STDOUT, 'What number do you guess? ');
+$userGuess = fgets(STDIN);
+
+
 
 if ($userguess > $randomNumber) {
     echo "Loooooowerrr...";
