@@ -1,24 +1,25 @@
 <?php
 
-$min = 0;
+$min = 1;
 $max = 100;
+$randomNumber = rand ($min , $max);
 
 // random number
-// $randomNumber = int rand ( int $min , int $max )
-
-fwrite(STDOUT, 'What number do you guess? ');
-$userGuess = fgets(STDIN);
+// LOOP 
 
 
-
-if ($userguess > $randomNumber) {
-    echo "Loooooowerrr...";
-} elseif ($userguess < $randomNumber) {
-	echo "Hiiiiiigherrr...";
-} else {
-	echo "YOU GOT IT!";
-}
-
+do {
+	fwrite(STDOUT, 'Number guess? ');
+	$userGuess = fgets(STDIN);
+		if ($userguess < $randomNumber) {
+			echo "Hiiiiiigherrr...";
+		} elseif ($userguess > $randomNumber) {
+		    echo "Loooooowerrr...";
+		} else {
+			echo "YOU GOT IT!";
+		}
+} while ($userguess != $randomNumber);
+// LOOP END
 // if random number greater
 	// elseif lower
 		// else equal
