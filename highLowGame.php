@@ -16,7 +16,8 @@ do {
 		} elseif ($userGuess > $randomNumber) {
 		    echo "Loooooowerrr...";
 		} else {
-			echo "YOU GOT IT!";
+			echo "YOU GOT IT!\n";
+			exit(0);
 		}
 	} while ($userGuess != $randomNumber);
 
@@ -28,3 +29,6 @@ do {
 
 // $userGuess = fgets(STDIN) - reads what user types
 	// $userGuess === random number variable 
+
+// 	Use exit(0) to end the game
+// If you get stuck in game, ctrl-c will exit.
